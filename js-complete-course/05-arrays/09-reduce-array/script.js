@@ -89,6 +89,12 @@
         },
     ];
 
-    // your code here
+    document.getElementById('run').addEventListener('click', () => {
+        console.log(
+          people.reduce((result, person) => {
+            return result + person.age;
+          }, 0)
+        );
+      });
 
 })();

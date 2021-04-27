@@ -16,7 +16,8 @@
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
-
+        [2, 4, 14, 10, 90, 23, 16].sort((a,b)=>b-a)
+        
     });
 
 })();

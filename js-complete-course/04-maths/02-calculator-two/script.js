@@ -12,10 +12,37 @@
 (function() {
     // to get the value of an input: document.getElementById("element-id").value
 
-    var performOperation = function(operation) {
-        // perform the operation
-    };
+    var performOperation = function (operator) {
+        // perform the operation 
+        let num1 = document.getElementById("op-one").value;
+        let num2 = document.getElementById("op-two").value;
 
+        console.log(operator);
+        switch (operator) {
+
+            case "addition":
+                alert(+num1+ + num2);
+                break;
+
+            case "substraction":
+                alert(num1 - num2);
+                break;
+
+            case "multiplication":
+                alert(num1 * num2);
+                break;
+
+            case "division":
+                alert(num1 / num2);
+                break;
+
+
+            default:
+                alert('Invalid operator');
+                break;
+
+        };
+    }
     Array.from(document.querySelectorAll("button.operator")).forEach(function($btn) {
         $btn.addEventListener("click", function() {
             performOperation($btn.id);
