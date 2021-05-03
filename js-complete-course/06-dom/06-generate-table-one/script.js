@@ -11,6 +11,14 @@
 
 (function() {
 
-    // your code here
+    const target = document.getElementById('target');
+    const table = document.createElement('table');
+    const column = document.createElement('tr');
+    table.appendChild(column);
+    target.appendChild(table);
+    [...Array(10)].forEach((_) => {
+      const row = document.createElement('td');
+      column.appendChild(row);
+    });
 
 })();

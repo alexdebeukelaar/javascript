@@ -11,6 +11,12 @@
 
 (function() {
 
-    // your code here
-
+    const pas = document.getElementById('pass-one');
+    const counter = document.getElementById('counter');
+    pas.setAttribute('maxlength', '10');
+  
+    pas.addEventListener('input', () => {
+      const value = pas.value;
+      counter.innerHTML = `${value.length}/10`;
+    });
 })();
