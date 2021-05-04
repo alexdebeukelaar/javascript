@@ -10,5 +10,18 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+  // your code here
+  document.getElementById("run").addEventListener("click", function () {
+    
+    let introduction = {
+     lastname: "deBeukelaar",
+     firstname: "Alex",
+     age: 21,  
+     city: "Malle",
+     country: "Belgium"
+    }
+     console.log("Wagwan my drilla I'm");
+     console.log(introduction);
+    
+});
 })();
