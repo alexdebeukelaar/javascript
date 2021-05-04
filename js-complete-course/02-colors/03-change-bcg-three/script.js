@@ -11,6 +11,18 @@
 
 (function() {
 
-    // your code here
+    document.getElementById('run').onclick  = function () {
+        let random ; 
+while(random !== '#123456') {
+
+
+   random = '#' + Math.floor(Math.random() * 16777215).toString(16); 
+    document.body.style.backgroundColor = random ;
+    console.log(random)
+    
+}
+
+    }
+
 
 })();

@@ -11,13 +11,13 @@
 
 (function() {
 
-    const red = document.getElementById('red');
+    const red = document.getElementById('purple');
     const green = document.getElementById('green');
     const yellow = document.getElementById('yellow');
     const blue = document.getElementById('blue');
   
     red.addEventListener('click', () => {
-      document.body.style.backgroundColor = 'red';
+      document.body.style.backgroundColor = 'purple';
     });
   
     green.addEventListener('click', () => {
