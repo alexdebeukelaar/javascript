@@ -11,4 +11,14 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", function () {
+        async function heroData() {
+            let data = await fetch("/_shared/api.json"); 
+            let main = await data.json(); 
+            console.log(main);
+        }
+        heroData();
+        
+    });
+
 })();
